@@ -1,0 +1,43 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5 – Estrutura básica</title>
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/css.css" media="screen" />
+        <script src="js/ControllerPalindromo.js"></script>
+        <script src="js/ControllerSeparateText.js"></script>
+
+    </head>
+    <body>
+        <header class="o-header">
+            <div class="navbar-container">
+                <nav>
+                    <a href="#"><img class="logo" src="assets/logo.svg"></a>
+                    <ul class="navbar-items">
+                        <li><a href="#" onclick="DisplayNonePalin();">Palindromo</a></li>
+                        <li><a href="#" onclick="DisplayNoneSdt();">Separador de texto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="o-main">
+            <div>
+                <form id="formulario" action="">
+                    <textarea id="text-palin"></textarea>
+                    <div id="CSVsaida" style="display: none;"></div>
+                    
+                    <input type="submit" value="Reset" onclick="resetPol(); resetDiv();" />
+
+                    <input id="btn-palin" type="submit" value="Verificar"  onclick="findText()"/>
+
+                    <label id="btn-sdt" for="inputCSV" style="display: none;">Selecione um arquivo</label>
+                    <input type="file" id="inputCSV" value="Reset"  onchange="findInput(this)"/>
+                </form>
+            </div>
+        </main>
+        <footer class="o-footer">
+            <p>devcarloshenrique @ 2020</p>
+        </footer>
+   </body>
+</html>

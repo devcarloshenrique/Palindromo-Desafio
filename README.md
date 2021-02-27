@@ -1,5 +1,5 @@
 
-## Desafio - Palindromo
+## Desafio Palindromo
 
 ### `Desafio`
 
